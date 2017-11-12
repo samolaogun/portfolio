@@ -1,0 +1,31 @@
+// Convenience Methods
+@function stripUnit($number) {
+	@return $number / ($number * 0 + 1);
+}
+
+// Positioning Mixins ("p" prefix)
+@mixin pVertical ($prop, $val) {
+	.#{$prop}-v--#{stripUnit($val)} {
+		#{$prop}-top: $val;
+		#{$prop}-bottom: $val;
+	}
+}
+
+@mixin pHorizontal ($prop, $val) {
+	.#{$prop}-h--#{stripUnit($val)} {
+		#{$prop}-left: $val;
+		#{$prop}-right: $val;
+	}
+}
+
+@mixin pLocation ($prop, $loc, $val) {
+	.#{$prop}-#{$loc}--#{stripUnit($val)} {
+		#{$prop}-#{$loc}: $val;
+	}
+}
+
+@mixin pGeneral ($prop, $val) {
+	.#{$prop}--#{stripUnit($val)} {
+		#{$prop}: $val;
+	}
+}

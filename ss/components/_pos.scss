@@ -1,0 +1,17 @@
+@each $stop in $stops {
+	// SO WET
+	@include pVertical(margin, $stop);
+	@include pVertical(padding, $stop);
+	@include pHorizontal(margin, $stop);
+	@include pHorizontal(padding, $stop);
+	@include pLocation(margin, top, $stop);
+	@include pLocation(margin, right, $stop);
+	@include pLocation(margin, bottom, $stop);
+	@include pLocation(margin, left, $stop);
+	@include pLocation(padding, top, $stop);
+	@include pLocation(padding, right, $stop);
+	@include pLocation(padding, bottom, $stop);
+	@include pLocation(padding, left, $stop);
+	@include pGeneral(margin, $stop);
+	@include pGeneral(padding, $stop);
+}

@@ -1,0 +1,53 @@
+.grid {
+	margin-left: -#{$gutter};
+	clear: both;
+	display: block;
+	&:after,
+	&:before {
+		content: "";
+		display: block;
+		clear: both;
+	}
+}
+
+.row {
+	display: block;
+}
+
+%col {
+	box-sizing: border-box;
+	float: right;
+}
+
+.fix-left {
+	float: left;
+}
+
+@mixin col($end) {
+	@for $i from 1 through $end {
+		.col-#{$i}-of-#{$end} {
+			width: (100% / $end) * $i;
+			min-width: (100% / $end) * $i;
+			padding-left: $gutter; //postcss
+			@extend %col;
+			> * {
+				width: 100%;
+			}
+		}
+		.col-#{$i}-of-#{$end}--s {
+			width: (100% / $end) * $i;
+			min-width: (100% / $end) * $i;
+			box-sizing: border-box;
+			> * {
+				width: 100%;
+			}
+		}
+	}
+}
+
+@include col(2);
+@include col(3);
+@include col(4);
+@include col(5);
+@include col(6);
+@include col(7);

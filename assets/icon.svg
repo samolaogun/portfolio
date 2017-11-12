@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="80px" height="80px" viewBox="0 0 80 80" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 40.1 (33804) - http://www.bohemiancoding.com/sketch -->
+    <title>icon</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="icon" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g>
+            <rect id="Rectangle" fill="#009DFF" x="0" y="0" width="80" height="80"></rect>
+            <g id="Logo---White" transform="translate(23.000000, 23.000000)" fill="#FFFFFF">
+                <path d="M22.9669429,8.75451276 C21.6733882,3.72031044 17.10449,0 11.6666667,0 C5.22334459,0 0,5.22334459 0,11.6666667 C0,17.10449 3.72031044,21.6733882 8.75451276,22.9669429 C8.94594354,15.2038631 15.2038631,8.94594354 22.9669429,8.75451276 Z M23.3333333,35 C29.7766554,35 35,29.7766554 35,23.3333333 C35,16.8900113 29.7766554,11.6666667 23.3333333,11.6666667 C16.8900113,11.6666667 11.6666667,16.8900113 11.6666667,23.3333333 C11.6666667,29.7766554 16.8900113,35 23.3333333,35 Z" id="Combined-Shape"></path>
+            </g>
+        </g>
+    </g>
+</svg>

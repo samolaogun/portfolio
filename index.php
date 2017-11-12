@@ -1,0 +1,159 @@
+<?php 
+
+$manifest = json_decode(file_get_contents('meta.json'));
+
+$title = $manifest->title;
+$description = $manifest->description;
+$url = $manifest->url;
+$author = $manifest->author;
+$image = $manifest->image;
+
+?>
+<!doctype html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta http-equiv="x-ua-compatible" content="ie=edge, chrome=1">
+
+	<title>Sam Olaogun</title>
+
+	<link rel="stylesheet" href="ss/main.min.css" type="text/css">
+	<link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+	<link rel="shortcut icon" href="/favicon.png" type="image/png">
+
+	<meta name="title" content="<?php echo $title?>">
+	<meta name="author" content="<?php echo $author?>">
+	<meta name="description" content="<?php echo $description?>">
+
+	<meta property="og:title" content="<?php echo $title?>">
+	<meta property="og:type" content="website">
+	<meta property="og:description" content="<?php echo $description?>">
+	<meta property="og:url" content="<?php echo $url?>">
+	<meta property="og:image" content="<?php echo $image?>">
+</head>
+
+<body>
+	<section class="section__header">
+		<div class="center--container">
+			<div class="col-3-of-7--s center--h">
+				<hgroup>
+					<div class="profile">
+						<img title="Alexandria" src="assets/icon.svg" />
+					</div>
+					<h1>Building Alexandria</h1>
+					<p class="txt txt--sub"> &mdash; Alexandria is still in it's early stages. With the weight of schoolwork our producitivity slowed. We're planning a launch for late spring 2017. I built the front end architecture, crafted the Brand, and designed the product. In short, I did a lot of things.</p>
+				</hgroup>
+				<a href="soon.html">
+					<div class="tag" data-tag="wip">
+						<div class="tag__dot--green">
+							<svg height="12" width="12">
+								<circle cx="6" cy="6" r="3" />
+							</svg>
+						</div>
+						<span class="tag__name">WIP</span>
+					</div>
+				</a>
+				<a href="soon.html">
+					<div class="tag" href="soon.html" data-tag="wip">
+						<div class="tag__dot--blue">
+							<svg height="12" width="12">
+								<circle cx="6" cy="6" r="3" />
+							</svg>
+						</div>
+						<span class="tag__name">Product Design</span>
+					</div>
+				</a>
+			</div>
+		</div>
+	</section>
+	<main>
+		<section class="section">
+			<div class="grid">
+				<article class="col-2-of-3">
+					<h3>Some Context</h3>
+					<p class="txt txt--body">Early last year a friend of mine approached me with an offer to build an educational product. It was called "Alexandria" and it was targeted towards making learning easier. At first glance I doubted the tangibility of the idea. A learning application? There were already so many solutions, each refined in their own respect. Soon after he showed me the founders outline plan. He initially wrote it for a buisiness competition, but added to it later on. It was upwards of 30 pages. He had good drive and his proposal was edifying — so I gave in. The next few months would provide a bit of resistance, but they allowed me to grow as a designer and a collaborator. The intellect that I would inherit building a workable product were asynchornous to those I had gained from my small personal ventures. Working within the constraints of a growing company, unlike indefinite launch spiral that my side projects had placed me in, would enable me to:</p>
+					<ul>
+						<li><b>Better understand</b> the lifecycle of an infant product</li>
+						<li><b>Launch</b>, perfect, and maintain a finished product</li>
+						<li><b>Collaborate</b> with a engineer</li>
+					</ul>
+				</article>
+				<div class="col-1-of-3">
+					<!--
+				<figure>
+					<iframe height="400px" src="https://dashboard.framer.cloud/"></iframe>
+					<figcaption>Flashback. This was one of my first sketches. It gave me the general idea of what I was building.</figcaption>
+				</figure>
+-->
+				</div>
+			</div>
+		</section>
+		<hr class="c-mobile">
+		<section>
+			<figure>
+				<!-- add inline video (vimeo) -->
+				<iframe height="600px" src="https://framer.cloud/ajEYk/"></iframe>
+			</figure>
+		</section>
+		<hr class="c-mobile">
+		<section class="section">
+			<div class="grid">
+				<article class="col-2-of-3">
+					<h3>Handshake 🤝 </h3>
+					<p class="txt txt--body">Before I dive into my process, a bit on collaboration. Although casual, good collaboration skills are often taken for granted. Good communication skills unite a team. Especially for a product still in its infancy, isolation simply wasn't an option for me. Me and fellow engineer recognized the importance of good communications skills from the very beginning. We didn't make an explicit decision to, but we ended up using a general framework for communication, version management and collaboration. The great thing about this was that it was allowed for familiarity. We could righfully expect that a certain part of a project, or a certain set of tasks would be posted in a specific place. Our framework worked a bit like this: </p>
+					<div class="margin-v--6">
+						<hr>
+						<p class="txt txt--extra txt--center">
+							Framer Studio prototype <b>saved to</b> Google Drive <b>discussed on</b> Facebook Messenger
+						</p>
+						<hr>
+					</div>
+					<p class="txt txt--body">As you can tell from my quick sketch, prototyping was major component in our collaboration framework. It enabled us to make sure that we were building the right thing. It served as a validation for a concept before we moved to the development cycle. It also made communicating interactions a breeze and allowed us to make more informed decisions. In terms of general communication, we prioritized speed. Although we eventually tried out Asana and Slack, Messenger was our main mode of communication. Not so professional, but this service made the most sense because we were a duo and we often worked synchronously. For version control, we used Google Drive because it was the most honest solution. We simply didn't have the patience for Git in our project. Professional version management just wasn't the best way to manage our resources since we needed to move quickly, and Dropbox didn't provide the speed of Google Drive.</p>
+				</article>
+				<div class="col-1-of-3"></div>
+			</div>
+		</section>
+		<hr>
+		<section class="section">
+			<div class="grid">
+				<article class="col-2-of-3">
+					<h3>Problem</h3>
+					<p class="txt txt--body">We learn something small each day. A new word, a new trick, a new tool. When we find our niche, our topic of interest, our only motive is to expand our knowledge on that subject. This is my relationship with design. Unfortunately, the way that school is structured, it's very challenging for a student to maintain genuine interest in a subject.</p>
+				</article>
+				<div class="col-1-of-3"></div>
+			</div>
+		</section>
+		<hr class="c-mobile">
+		<section class="section">
+			<figure>
+				<iframe height="600px" src="http://samolaogun.com/matrix"></iframe>
+				<figcaption>Flashback. This was one of my first sketches. It gave me the general idea of waht I was building.</figcaption>
+			</figure>
+		</section>
+		<hr class="c-mobile">
+		<section class="section">
+			<div class="grid">
+				<article class="col-2-of-3">
+					<h3>Baby steps</h3>
+					<p class="txt txt--body">Most don't realize how frustrating it is to start completely afresh. When I was given this task, to build a product from the ground up, I quickly whimpered in awe. What questions should I be asking? What did I want to ultimately achieve. Before I was to begin I began by outlining the requirements for the product, the "design principles". A focused product would have to be:</p>
+					<ul>
+						<li>Engaging. The whole purpose of this project was to put aside notions of learning.</li>
+						<li>Delightful. When you're not enjoying yourself, learning is painful. This product would have to be a joy to use.</li>
+					</ul>
+				</article>
+				<div class="col-1-of-3"></div>
+			</div>
+		</section>
+
+	</main>
+
+	<footer class="footer">
+		<p class="footer__txt">You survived 🙏. Should designers email? <a class="a" title="sam.olaogun@gmail.com" href="mailto:sam.olaogun@gmail.com">Good question</a>. 🤔
+	</footer>
+
+	<script src="js/app.js"></script>
+</body>
+
+</html>

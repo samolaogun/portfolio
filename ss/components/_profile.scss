@@ -1,0 +1,64 @@
+%transition {
+	transition-property: all;
+	transition-timing-function: ease-in-out;
+	transition-duration: 0.4s;
+}
+
+.profile {
+	will-change: transform, box-shadow;
+	user-select: none;
+	border: .5rem solid white;
+	box-shadow: 1px 4px 10px rgba(0, 0, 0, .1);
+	border-radius: 50%;
+	overflow: hidden;
+	height: 6rem;
+	width: 6rem;
+	display: inline-block;
+	text-align: inherit;
+	margin-bottom: 5rem;
+	@extend %transition;
+	&:hover {
+		box-shadow: 1px 60px 100px rgba(0, 0, 0, .2);
+		transform: scale(1.1);
+	}
+}
+
+@each $name,
+$color in $colors {
+	.tag__dot--#{$name} {
+		display: inline-flex;
+		padding-right: 0.5rem;
+		svg {
+			align-self: center;
+			fill: $color;
+		}
+	}
+}
+
+.tag__name {
+	font-size: 1.75rem;
+	padding-left: .5rem;
+	padding-right: .5rem;
+	width: fit-content;
+	color: white;
+	border-left: 1px solid rgba(lighten($colorGray, 10%), .2);
+}
+
+.tag {
+	will-change: transform;
+	user-select: none;
+	background-color: rgba(255, 255, 255, .1);
+	border: 1px solid rgba(255, 255, 255, .2);
+	width: fit-content;
+	padding: .5rem;
+	display: inline-flex;
+	align-items: center;
+	border-radius: 0.5rem;
+	margin-right: 1rem;
+	cursor: pointer;
+	@extend %transition;
+	&:hover {
+		opacity: 0.6;
+		transform: scale(0.98);
+	}
+}
