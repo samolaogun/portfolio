@@ -13,7 +13,7 @@ body {
 }
 
 .full {
-  height: fit-content !important;
+  // height: fit-content !important;
 }
 .color-block-blue {
   background-color: #2095ff;
@@ -27,20 +27,20 @@ body {
 
 .img-show {
   box-sizing: border-box;
-  padding: 0px;
-  width: 100vw;
-  min-height: 100vh;
+
+  width: 100%;
   display: flex;
   background-color: #212326;
   justify-content: center;
   align-items: center;
+  padding: 4rem 10rem;
   flex-direction: column;
 }
 
 .img-show img {
-  max-width: 65%;
   height: 100%;
   object-fit: contain;
   border-radius: 4px;
+
   overflow: hidden;
 }

@@ -1,4 +1,10 @@
 // Convenience Methods
+@mixin media ($maxWidth) {
+	@media(max-width: #{$maxWidth}) {
+		@content;
+	}
+}
+
 @function stripUnit($number) {
 	@return $number / ($number * 0 + 1);
 }

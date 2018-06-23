@@ -289,11 +289,6 @@ li {
 	.c-mobile {
 		display: none;
 	}
-	@mixin media ($maxWidth) {
-		@media(max-width: #{$maxWidth}) {
-			@content;
-		}
-	}
 	// FIX L prefix c for conditiona
 	@include media (1200px) {
 		html {
@@ -393,6 +388,8 @@ li {
 		padding-bottom: 4rem;
 		padding-left: 3rem;
 		padding-right: 3rem;
+		width: 100%;
+		box-sizing: border-box;
 	}
 	.profile {
 		display: none !important;
@@ -425,5 +422,8 @@ li {
 		display: block;
 		float: none;
 		width: 100%;
+	}
+	.img-show {
+		padding: 1rem 1rem !important;
 	}
 }
